@@ -1,0 +1,42 @@
+/* Профессиональные улучшения для читаемости Markdown */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.6;
+    max-width: 900px; /* Ограничиваем ширину для лучшего восприятия длинных строк */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Улучшение таблиц (особенно важно для правил с наказаниями) */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 0.9em;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Выделение важных наказаний жирным красным цветом */
+strong {
+    color: #cc0000;
+}
+
+/* Стилизация блока с форматом наказаний */
+blockquote {
+    border-left: 5px solid #007bff;
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin: 20px 0;
+    color: #333;
+}
