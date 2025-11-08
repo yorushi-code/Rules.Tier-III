@@ -1,39 +1,70 @@
 site_name: Официальные Правила TeeFusion
 site_url: https://yorushi-code.github.io/Rules.Tier-III/
-# ВАЖНО: убедитесь что нет лишних слешей в конце
+site_description: Правила модерации и поведения игроков на серверах TeeFusion
+site_author: TeeFusion
 
 theme:
   name: material
+  language: ru
+  
   features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
     - navigation.sections
+    - navigation.expand
     - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
     - content.tabs.link
-    - header.autohide
+    - content.code.copy
+    - content.code.annotate
   
   palette:
     # Светлая тема
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: 'purple'
-      accent: 'pink'
+      primary: deep purple
+      accent: pink
       toggle:
-        icon: material/weather-night
-        name: Переключить на темный режим
+        icon: material/brightness-7
+        name: Переключить на тёмную тему
 
-    # Темная тема
+    # Тёмная тема
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: 'purple'
-      accent: 'pink'
+      primary: deep purple
+      accent: pink
       toggle:
-        icon: material/weather-sunny
-        name: Переключить на светлый режим
+        icon: material/brightness-4
+        name: Переключить на светлую тему
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+  
+  icon:
+    logo: material/shield-account
+    repo: fontawesome/brands/github
+
+# Убираем футер "Made with Material for MkDocs"
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/teefusion
+      name: Discord сервер TeeFusion
+  generator: false  # ЭТО УБИРАЕТ ФУТЕР!
+
+# Подключаем кастомные стили
+extra_css:
+  - stylesheets/extra.css
 
 # Навигация
 nav:
-  - Главная страница: index.md
-  - Правила Модерации: rules/moderation.md
-  - Правила Игроков: rules/players.md
+  - 🏠 Главная: index.md
+  - 👮 Правила Модерации: rules/moderation.md
+  - 🎮 Правила Игроков: rules/players.md
 
 # Расширения Markdown
 markdown_extensions:
@@ -45,3 +76,26 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+# Плагины
+plugins:
+  - search:
+      lang: ru
