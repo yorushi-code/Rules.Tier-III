@@ -1,6 +1,6 @@
-site_name: Официальные Правила TeeFusion
+site_name: Официальные Правила TeeFusion Tier-III
 site_url: https://yorushi-code.github.io/Rules.Tier-III/
-site_description: Правила модерации и поведения игроков на серверах TeeFusion
+site_description: Правила модерации и поведения игроков на серверах TeeFusion Tier-III
 site_author: TeeFusion
 
 theme:
@@ -51,8 +51,8 @@ theme:
 # Убираем футер "Made with Material for MkDocs"
 extra:
   social:
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/teefusion
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/Train_Gores
       name: Discord сервер TeeFusion
   generator: false  # ЭТО УБИРАЕТ ФУТЕР!
 
