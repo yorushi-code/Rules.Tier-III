@@ -1,0 +1,26 @@
+site_name: Официальные Правила TeeFusion
+site_url: https://yorushi-code.github.io/Rules.Tier-III/
+
+theme:
+  name: material
+  palette:
+    # Установите яркий акцентный цвет (например, синий, зеленый или оранжевый)
+    primary: 'purple'
+    accent: 'pink'
+    - scheme: default
+      toggle:
+        icon: material/brightness-7  # иконка для светлой схемы
+        name: Переключить на темный режим
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4  # иконка для темной схемы
+        name: Переключить на светлый режим
+
+  features:
+    - navigation.sections
+    - navigation.top
+
+nav:
+  - Главная страница: index.md
+  - Правила Модерации: rules/moderation.md
+  - Правила Игроков: rules/players.md
