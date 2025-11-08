@@ -1,0 +1,276 @@
+/* ====== ОБЩИЕ СТИЛИ ====== */
+:root {
+  --teefusion-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --teefusion-glow: 0 0 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Плавная прокрутка */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ====== ЗАГОЛОВКИ ====== */
+h1 {
+  background: var(--teefusion-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800 !important;
+  font-size: 2.5em !important;
+  margin-bottom: 1.5rem !important;
+  text-shadow: var(--teefusion-glow);
+}
+
+h2 {
+  color: #667eea;
+  font-weight: 700 !important;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem !important;
+}
+
+h3 {
+  color: #764ba2;
+  font-weight: 600 !important;
+}
+
+/* ====== ТАБЛИЦЫ ====== */
+table {
+  border-collapse: separate !important;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0 !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+thead tr {
+  background: var(--teefusion-gradient) !important;
+}
+
+thead th {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1rem !important;
+  font-size: 0.9em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+tbody tr {
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.03) !important;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+tbody tr:hover {
+  background: rgba(102, 126, 234, 0.2) !important;
+  transform: scale(1.01);
+  box-shadow: var(--teefusion-glow);
+}
+
+td {
+  padding: 1rem !important;
+  border-bottom: 1px solid rgba(102, 126, 234, 0.3);
+  color: #e0e0e0 !important;
+  font-weight: 500;
+}
+
+/* Жирный текст в таблицах */
+td strong {
+  color: #a5b4fc !important;
+  font-weight: 700;
+}
+
+/* ====== ТЁМНАЯ ТЕМА - ТАБЛИЦЫ ====== */
+[data-md-color-scheme="slate"] table {
+  box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+  background: rgba(30, 30, 46, 0.8) !important;
+}
+
+[data-md-color-scheme="slate"] tbody tr {
+  background: rgba(40, 40, 60, 0.5) !important;
+}
+
+[data-md-color-scheme="slate"] tbody tr:nth-child(even) {
+  background: rgba(50, 50, 70, 0.5) !important;
+}
+
+[data-md-color-scheme="slate"] tbody tr:hover {
+  background: rgba(102, 126, 234, 0.25) !important;
+}
+
+[data-md-color-scheme="slate"] td {
+  color: #f0f0f0 !important;
+  border-bottom: 1px solid rgba(102, 126, 234, 0.4);
+}
+
+[data-md-color-scheme="slate"] td strong {
+  color: #c4b5fd !important;
+}
+
+/* ====== СВЕТЛАЯ ТЕМА - ТАБЛИЦЫ ====== */
+[data-md-color-scheme="default"] table {
+  background: #ffffff !important;
+}
+
+[data-md-color-scheme="default"] tbody tr {
+  background: #fafafa !important;
+}
+
+[data-md-color-scheme="default"] tbody tr:nth-child(even) {
+  background: #f5f5f5 !important;
+}
+
+[data-md-color-scheme="default"] tbody tr:hover {
+  background: rgba(102, 126, 234, 0.15) !important;
+}
+
+[data-md-color-scheme="default"] td {
+  color: #2c3e50 !important;
+  border-bottom: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+[data-md-color-scheme="default"] td strong {
+  color: #667eea !important;
+}
+
+/* ====== СПИСКИ ====== */
+ul li, ol li {
+  margin: 0.8rem 0;
+  line-height: 1.8;
+}
+
+ul li::marker {
+  color: #667eea;
+  font-size: 1.2em;
+}
+
+/* ====== АДМОНИШЕНЫ (БЛОКИ ИНФОРМАЦИИ) ====== */
+.admonition {
+  border-radius: 12px !important;
+  border-left: 5px solid #667eea !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  margin: 1.5rem 0 !important;
+}
+
+.admonition-title {
+  font-weight: 700 !important;
+  background: rgba(102, 126, 234, 0.1) !important;
+}
+
+/* ====== ЦИТАТЫ ====== */
+blockquote {
+  border-left: 5px solid #764ba2 !important;
+  background: rgba(118, 75, 162, 0.1) !important;
+  border-radius: 8px;
+  padding: 1rem 1.5rem !important;
+  margin: 1.5rem 0 !important;
+  font-style: italic;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ====== КОД ====== */
+code {
+  background: rgba(102, 126, 234, 0.15) !important;
+  color: #a5b4fc !important;
+  padding: 0.2rem 0.5rem !important;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+[data-md-color-scheme="default"] code {
+  background: rgba(102, 126, 234, 0.1) !important;
+  color: #667eea !important;
+}
+
+/* ====== НАВИГАЦИЯ ====== */
+.md-header {
+  background: var(--teefusion-gradient) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.md-tabs {
+  background: rgba(102, 126, 234, 0.9) !important;
+}
+
+/* ====== КНОПКИ И ССЫЛКИ ====== */
+a {
+  color: #a5b4fc !important;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #c4b5fd !important;
+  text-shadow: var(--teefusion-glow);
+}
+
+[data-md-color-scheme="default"] a {
+  color: #667eea !important;
+}
+
+[data-md-color-scheme="default"] a:hover {
+  color: #764ba2 !important;
+}
+
+/* ====== РАЗДЕЛИТЕЛИ ====== */
+hr {
+  border: none !important;
+  height: 3px !important;
+  background: var(--teefusion-gradient) !important;
+  margin: 3rem 0 !important;
+  border-radius: 2px;
+}
+
+/* ====== КОНТЕНТ ====== */
+.md-content {
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+article {
+  font-size: 1.05em;
+  line-height: 1.8;
+}
+
+/* ====== АНИМАЦИИ ====== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.md-content__inner {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* ====== СКРОЛЛБАР ====== */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(102, 126, 234, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--teefusion-gradient);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
