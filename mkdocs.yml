@@ -9,11 +9,11 @@ theme:
     accent: 'pink'
     - scheme: default
       toggle:
-        icon: material/brightness-7  # иконка для светлой схемы
+        icon: material/brightness-and-contrast.png  # иконка для светлой схемы
         name: Переключить на темный режим
     - scheme: slate
       toggle:
-        icon: material/brightness-4  # иконка для темной схемы
+        icon: material/night-mode.png  # иконка для темной схемы
         name: Переключить на светлый режим
 
   features:
