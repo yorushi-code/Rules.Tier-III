@@ -1,5 +1,6 @@
 site_name: Официальные Правила TeeFusion
 site_url: https://yorushi-code.github.io/Rules.Tier-III/
+# ВАЖНО: убедитесь что нет лишних слешей в конце
 
 theme:
   name: material
@@ -9,9 +10,8 @@ theme:
     - content.tabs.link
     - header.autohide
   
-  # ИСПРАВЛЕННЫЙ БЛОК PALETTE:
   palette:
-    # 1. СХЕМА ПО УМОЛЧАНИЮ (СВЕТЛАЯ)
+    # Светлая тема
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: 'purple'
@@ -20,7 +20,7 @@ theme:
         icon: material/weather-night
         name: Переключить на темный режим
 
-    # 2. СХЕМА SLATE (ТЕМНАЯ)
+    # Темная тема
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: 'purple'
@@ -35,7 +35,7 @@ nav:
   - Правила Модерации: rules/moderation.md
   - Правила Игроков: rules/players.md
 
-# Расширения для поддержки красочного и структурированного контента (таблицы, эмодзи, предупреждения)
+# Расширения Markdown
 markdown_extensions:
   - admonition
   - pymdownx.details
