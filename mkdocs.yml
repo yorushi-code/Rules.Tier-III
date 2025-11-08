@@ -53,7 +53,7 @@ extra:
   social:
     - icon: fontawesome/brands/telegram
       link: https://t.me/Train_Gores
-      name: Discord сервер TeeFusion
+      name: Telegram сервер TeeFusion Tier-III (TrainGores)
   generator: false  # ЭТО УБИРАЕТ ФУТЕР!
 
 # Подключаем кастомные стили
